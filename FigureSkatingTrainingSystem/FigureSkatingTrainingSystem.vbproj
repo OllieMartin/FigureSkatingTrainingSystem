@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC162A3B-0549-489A-8347-DCE8B8CB30A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FigureSkatingTrainingSystem.My.MyApplication</StartupObject>
+    <RootNamespace>FigureSkatingTrainingSystem</RootNamespace>
+    <AssemblyName>FigureSkatingTrainingSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FigureSkatingTrainingSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FigureSkatingTrainingSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>FigureSkatingTrainingSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>FigureSkatingTrainingSystem.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DiaryCreation.vb" />
+    <Compile Include="FileManagement.vb" />
+    <Compile Include="FormManagement.vb" />
+    <Compile Include="FRMDataBaseAddCoach.Designer.vb">
+      <DependentUpon>FRMDataBaseAddCoach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDataBaseAddCoach.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDataBaseAddComp.Designer.vb">
+      <DependentUpon>FRMDataBaseAddComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDataBaseAddComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDataBaseAddMenu.Designer.vb">
+      <DependentUpon>FRMDataBaseAddMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDataBaseAddMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDataBaseAddPupil.Designer.vb">
+      <DependentUpon>FRMDataBaseAddPupil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDataBaseAddPupil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDataBaseAddPupil2.Designer.vb">
+      <DependentUpon>FRMDataBaseAddPupil2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDataBaseAddPupil2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDataBaseAddTest.Designer.vb">
+      <DependentUpon>FRMDataBaseAddTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDataBaseAddTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDataBaseMenu.Designer.vb">
+      <DependentUpon>FRMDataBaseMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDataBaseMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDataBaseSearch.Designer.vb">
+      <DependentUpon>FRMDataBaseSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDataBaseSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDataBaseSearch2.Designer.vb">
+      <DependentUpon>FRMDataBaseSearch2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDataBaseSearch2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDiaryMenu.Designer.vb">
+      <DependentUpon>FRMDiaryMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDiaryMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDiaryScreen1.Designer.vb">
+      <DependentUpon>FRMDiaryScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDiaryScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDiaryScreen2.Designer.vb">
+      <DependentUpon>FRMDiaryScreen2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDiaryScreen2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDiaryScreen3.Designer.vb">
+      <DependentUpon>FRMDiaryScreen3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDiaryScreen3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMMainMenu.Designer.vb">
+      <DependentUpon>FRMMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMParent.Designer.vb">
+      <DependentUpon>FRMParent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMParent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMProgressBar.Designer.vb">
+      <DependentUpon>FRMProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMProgressBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMRoutineMenu.Designer.vb">
+      <DependentUpon>FRMRoutineMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMRoutineMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMRoutineScreen1.Designer.vb">
+      <DependentUpon>FRMRoutineScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMRoutineScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMRoutineScreen2.Designer.vb">
+      <DependentUpon>FRMRoutineScreen2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMRoutineScreen2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMRoutineScreen3.Designer.vb">
+      <DependentUpon>FRMRoutineScreen3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRMRoutineScreen3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RoutinePlanning.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FRMDataBaseAddCoach.resx">
+      <DependentUpon>FRMDataBaseAddCoach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDataBaseAddComp.resx">
+      <DependentUpon>FRMDataBaseAddComp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDataBaseAddMenu.resx">
+      <DependentUpon>FRMDataBaseAddMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDataBaseAddPupil.resx">
+      <DependentUpon>FRMDataBaseAddPupil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDataBaseAddPupil2.resx">
+      <DependentUpon>FRMDataBaseAddPupil2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDataBaseAddTest.resx">
+      <DependentUpon>FRMDataBaseAddTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDataBaseMenu.resx">
+      <DependentUpon>FRMDataBaseMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDataBaseSearch.resx">
+      <DependentUpon>FRMDataBaseSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDataBaseSearch2.resx">
+      <DependentUpon>FRMDataBaseSearch2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDiaryMenu.resx">
+      <DependentUpon>FRMDiaryMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDiaryScreen1.resx">
+      <DependentUpon>FRMDiaryScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDiaryScreen2.resx">
+      <DependentUpon>FRMDiaryScreen2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDiaryScreen3.resx">
+      <DependentUpon>FRMDiaryScreen3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMMainMenu.resx">
+      <DependentUpon>FRMMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMParent.resx">
+      <DependentUpon>FRMParent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMProgressBar.resx">
+      <DependentUpon>FRMProgressBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMRoutineMenu.resx">
+      <DependentUpon>FRMRoutineMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMRoutineScreen1.resx">
+      <DependentUpon>FRMRoutineScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMRoutineScreen2.resx">
+      <DependentUpon>FRMRoutineScreen2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMRoutineScreen3.resx">
+      <DependentUpon>FRMRoutineScreen3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="LCC11">
+      <Guid>{EDCD5812-6A06-43C3-AFAC-46EF5D14E22C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSDAOSP">
+      <Guid>{E0E270C2-C0BE-11D0-8FE4-00A0C90A6341}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>1033</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSDASC">
+      <Guid>{2206CEB0-19C1-11D1-89E0-00C04FD7A829}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
